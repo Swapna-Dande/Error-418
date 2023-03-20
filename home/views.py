@@ -2,9 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import Profile,User
 from django.contrib.auth import authenticate,login,logout
-
-def auth(request):
-    return render(request, 'auth.html')
+from .models import Patient,Doctor
 
 def register(request):
     if request.method == 'POST':
@@ -20,8 +18,23 @@ def register(request):
         pf = Profile(user = usr,phone_number = uname,role = role)
         pf.save()
         print(f"This is pf {pf}")
-        return HttpResponse("Ok")
-    return render(request,'auth.html')
+        return redirect('/login')
+        # return HttpResponse("User Registered")
+    
+    return render(request,'register.html')
+
+
+def login_user(request):
+    if request.method == "POST":
+        name = request.POST['uname']
+        pwd = request.POST['pwd']
+        user = authenticate(request,username=name,password = pwd)
+        if user is not None:
+            login(request,user)
+            return redirect("/home")
+        else:
+            return redirect('/register')
+    return render(request,"login.html")    
 
 def test(request):
     print(request.user)
@@ -31,15 +44,20 @@ def test(request):
     print(pf.role)
     return HttpResponse("request.user")
 
-def login_user(request):
-    if request.method == "POST":
-        name = request.POST['uname']
-        pwd = request.POST['pwd']
-        user = authenticate(request,username=name,password = pwd)
-        if user is not None:
-            login(request,user)
-            return redirect("/")
-        
+def home(request):
+    if request.user.is_authenticated:
+        if Profile.objects.get(user = request.user).role == 1:  #Patient
+            print("This is patient")
+            return render(request,"patient.html")
+        elif Profile.objects.get(user = request.user).role == 2: #Doctor
+            print("This is doctor")
+            return render(request,"doctor.html")
+        else: #Management
+            print("This is hospital")
+            return render(request,"hospital.html")
+    else:
+        return render(request,"login.html")
 
-def index(request):
-    pass
+def logout_user(request):
+    logout(request)
+    return redirect('/')
