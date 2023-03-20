@@ -9,3 +9,7 @@ urlpatterns = [
     path('login',views.login_user,name='login'),
     path('home',views.index,name='index'),
 ]
+
+
+
+
