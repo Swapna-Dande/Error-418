@@ -48,3 +48,11 @@ class Patient(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+    
+
+class Record(models.Model):
+    name = models.ForeignKey(Patient,on_delete=models.CASCADE)
+    record_pdf = models.FileField(upload_to='uploads/')
+
+    def __str__(self):
+        return f"{self.name} file"
