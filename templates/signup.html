@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../static/img/logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+  <title>
+    E-Med
+  </title>
+  
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../static/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../static/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../static/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+</head>
+
+
+<body class="g-sidenav-show  bg-gray-200">
+    
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+        <img src="../assets/img/logo.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold text-white">E-Med</span>
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white active bg-gradient-primary" href="home.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">dashboard</i>
+            </div>
+            <span class="nav-link-text ms-1">Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="aboutus.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">table_view</i>
+            </div>
+            <span class="nav-link-text ms-1">About Us</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="faq.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">receipt_long</i>
+            </div>
+            <span class="nav-link-text ms-1">FAQ</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">notifications</i>
+            </div>
+            <span class="nav-link-text ms-1">Contact Us</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">person</i>
+            </div>
+            <span class="nav-link-text ms-1">Profile</span>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link text-white " href="signin.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">login</i>
+            </div>
+            <span class="nav-link-text ms-1">Sign In</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="signup.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">assignment</i>
+            </div>
+            <span class="nav-link-text ms-1" >Sign Up</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+
+      <div class="main-content position-relative max-height-vh-100 h-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+          <div class="container-fluid py-1 px-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">E-Med</a></li>
+                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Sign Up</li>
+              </ol>
+              <h6 class="font-weight-bolder mb-0">Sign Up</h6>
+            </nav>
+            <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+              <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                <!-- <div class="input-group input-group-outline">
+                  <label class="form-label">Type here...</label>
+                  <input type="text" class="form-control">
+                </div> -->
+              </div>
+              <ul class="navbar-nav  justify-content-end">
+                <li class="nav-item d-flex align-items-center">
+                  <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank" > Keep your health data private, but healthcare management a public affair - with E-Med.
+                </a>
+                </li>
+                <!-- <li class="nav-item d-flex align-items-center">
+                  <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+                    <i class="fa fa-user me-sm-1"></i>
+                    <span class="d-sm-inline d-none">Log out</span>
+                  </a>
+                </li> -->
+                <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                  <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                    <div class="sidenav-toggler-inner">
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="container-fluid px-2 px-md-4">
+            <div class="card card-body mx-3 mx-md-4 mt-4">
+  
+                  
+
+                  <div class="flex items-center justify-center">
+  <div
+    class="flex items-center justify-center px-4 py-10 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+    <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+      <h2
+        class="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl">
+        Sign Up
+      </h2>
+      <!-- <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+        Don't have an account? -->
+        <a
+          href="#"
+          title=""
+          class="font-medium text-gradient-primary transition-all duration-200 hover:text-gradient-primary hover:underline focus:text-indigo-700">
+          Create your free account here :
+        </a>
+      </p>
+      <form action="#" method="POST" class="mt-8">
+        <div class="space-y-5">
+          <div>
+            <label
+              for=""
+              class="text-base font-medium text-gray-900 dark:text-gray-200">
+              Aadhar Number
+            </label>
+            <div class="mt-2.5">
+              <input
+                class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent py-2 px-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                type="email"
+                placeholder="Aadhar Number" />
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center justify-between">
+              <label
+                for=""
+                class="text-base font-medium text-gray-900 dark:text-gray-200">
+                Password
+              </label>
+              <a
+                href="#"
+                title=""
+                class="text-sm font-medium text-gradient-primary hover:underline hover:text-gradient-primary focus:text-gradient-primary">
+                Forgot password?
+              </a>
+            </div>
+            <div class="mt-2.5">
+              <input
+                class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent py-2 px-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                type="password"
+                placeholder="Password" />
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+                <label
+                for=""
+                class="text-base font-medium text-gray-900 dark:text-gray-200">
+                Role
+              </label>
+                <select class="form-control" id="role" name="role">
+                    <option value="1">User</option>
+                    <option value="2">Doctor</option>
+                    <option value="3">Hospital Management</option>
+                </select>
+            </div>
+            <button
+              class="w-full inline-flex items-center justify-center rounded-md bg-gradient-primary px-3.5 py-2.5 text-base font-semibold leading-7 text-white hover:bg-indigo-500">
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 ml-2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="mt-3 space-y-3">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+               
+                  
+
+                </div>
+              </div>
+            
+              
+              <footer class="footer py-4  ">
+                <div class="container-fluid">
+                  <div class="row align-items-center justify-content-lg-between">
+                    <div class="col-lg-6 mb-lg-0 mb-4">
+                      <div class="copyright text-center text-sm text-muted text-lg-start">
+                        © <script>
+                          document.write(new Date().getFullYear())
+                        </script>,
+                        made with <i class="fa fa-heart"></i> by
+                        <a href="#" class="font-weight-bold" target="_blank">Error 418</a>
+                        Team
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link text-muted" target="_blank">Github</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link text-muted" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+        </div>
+
+
+   
+
+            </div>
+        </div>
+
+</body>
+</html>
