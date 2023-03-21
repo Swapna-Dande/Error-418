@@ -42,6 +42,17 @@ By digitalizing medical records, patients and healthcare providers can access pa
 ## 📢 What's next for E-Med
 A centralized database of medical records can provide valuable data that can be used for research and data analytics, this can help to identify trends and patterns in healthcare, which can be used to develop new treatments and improve patient care.
 
+## Interface:
+| Patients      | Hospitals | Doctors     |
+| :---        |    :----:   |          ---: |
+| ![For Patients](./static/img/ssp.jpeg)      | ![For Hospitals](./static/img/ssh.jpeg)     | ![For Doctors](./static/img/ssd.jpeg)   |
+| Only View   | View and assign patients      | Only View      |
+
+## Scanning Health results:
+| Physical copy     | Output |
+| ----------- | ----------- |
+|   ![Reciept](./static/img/srep.jpeg)   | {<br>'name': 'Kathy Crawford',<br> 'dob': 'May 6 1972',<br> 'phone': '375-4621\n\nGenera',<br> 'problems': 'headaches',<br> 'doa': '30 December 2020'<br>}       |
+
 
 # Steps To Run Locally and Make Changes
 
