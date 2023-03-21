@@ -1,5 +1,5 @@
 # Rajasthan IT DAY <HACK/ATHON>
-# Project E-Med
+# [Project E-Med](https://drive.google.com/drive/folders/1IVCK1t26Dw9OqCntr4aKwKW9HgfyuSuZ?usp=sharing)
 
 ## 🔥 Inspiration
 
@@ -13,6 +13,8 @@ This application provides a platform for patients to view their previous diagnos
 Doctors can access the medical records of the patients assigned to them including their appointments, laboratory test results,, and electronic consultations.
 
 Hospitals will have a platform to manage the patients, they can assign patients to a specific doctor in that hospital and update the medical reports of every individual patient while checking out. For reports that are available as hard copies, this platform provides a scanner that can read any kind of medical receipt and extract the required information
+
+[Powerpoint and Video link](https://drive.google.com/drive/folders/1IVCK1t26Dw9OqCntr4aKwKW9HgfyuSuZ?usp=sharing)
 
 ## 🛠 How we built it
 **User Interface:** Material UI by Bootstrap, Tailwind CSS, SCSS
@@ -43,6 +45,11 @@ By digitalizing medical records, patients and healthcare providers can access pa
 A centralized database of medical records can provide valuable data that can be used for research and data analytics, this can help to identify trends and patterns in healthcare, which can be used to develop new treatments and improve patient care.
 
 ## Interface:
+
+| Index page     | Authentication |
+| ----------- | ----------- |
+|   ![home page](./static/img/faq.png)   | ![auth](./static/img/auth.png)}       |
+
 | Patients      | Hospitals | Doctors     |
 | :---        |    :----:   |          ---: |
 | ![For Patients](./static/img/ssp.jpeg)      | ![For Hospitals](./static/img/ssh.jpeg)     | ![For Doctors](./static/img/ssd.jpeg)   |
