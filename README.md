@@ -48,7 +48,7 @@ A centralized database of medical records can provide valuable data that can be 
 
 | Index page     | Authentication |
 | ----------- | ----------- |
-|   ![home page](./static/img/faq.png)   | ![auth](./static/img/auth.png)}       |
+|   ![home page](./static/img/faq.png)   | ![auth](./static/img/auth.png)       |
 
 | Patients      | Hospitals | Doctors     |
 | :---        |    :----:   |          ---: |
